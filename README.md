@@ -1,4 +1,4 @@
-# [Team B11 CuriousIC] Battery Management System
+# [CuriousIC] Battery Management System
 
 ## Track: B
 
