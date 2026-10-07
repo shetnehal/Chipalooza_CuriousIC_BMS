@@ -1,7 +1,5 @@
 # [CuriousIC] Battery Management System
 
-## Track: B
-
 Team: CuriousIC  
 Project: Battery Management System
 
