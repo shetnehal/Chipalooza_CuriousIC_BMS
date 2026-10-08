@@ -40,8 +40,6 @@ For a block-by-block description, see [Architecture](docs/architecture.md).
 | EIS frequency range | 3 Hz–2 kHz |
 | Total power consumption | < 5 mW |
 
-These specifications are sourced from [the team submission](https://github.com/sscs-ose/sscs-chipathon-2026/issues/64). Definitions, measurement conditions, and design verification should be added alongside simulation results.
-
 ## Repository guide
 
 | Location | Contents |
@@ -54,24 +52,12 @@ These specifications are sourced from [the team submission](https://github.com/s
 | [`presentations/`](presentations/) | Project presentations and review links |
 | [`images/`](images/) | Architecture, schematic, waveform, and layout figures |
 
-## Design and verification workflow
-
-1. **Architecture and specification:** Document the measurement objectives, signal chain, interfaces, and success criteria.
-2. **Schematic design:** Develop the constituent analog blocks and review block-level connections.
-3. **Simulation:** Assess relevant gain, noise, linearity, stability, conversion performance, and power consumption as appropriate to each block.
-4. **Physical design:** Prepare layouts, run design-rule and layout-versus-schematic checks, and document post-layout verification when available.
-5. **Integration and reviews:** Trace system-level targets to reported verification evidence.
-
-*This is an intended workflow, not a statement that every phase is complete.*
 
 ## Project resources
 
-- [Official Chipathon project issue](https://github.com/sscs-ose/sscs-chipathon-2026/issues/64)
 - [Schematic review slides](https://docs.google.com/presentation/d/12N3y_zp929nU2PM8qJo1MPgFX7kk_WgMO9ezXvOn-c4/edit)
 - [Brief proposal](https://docs.google.com/presentation/d/11BPli64_wnRB7CIzmEGm5DrDxrM5vVj7b5d7VGgPUlY/edit)
 - [Detailed proposal](https://docs.google.com/presentation/d/1jtBmbHwJeaLtg7Y3EHuqR_N1Z0W8oqqH/edit)
-- [Layout review slides](https://docs.google.com/presentation/d/1rJZ-etx7EaYqIQTFyeex2EWuECI70009pZZuVRBge1s/edit)
-- [Project tracker](https://docs.google.com/spreadsheets/d/108bCtFWKPcUP86Tt6SOrhKjrjKEHrWavXDS_NzvJEGo/edit)
 - [Related team repository](https://github.com/guptasou03/B11_CuriousIC_BMS)
 
 
