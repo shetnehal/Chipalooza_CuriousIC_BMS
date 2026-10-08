@@ -53,11 +53,5 @@ For a block-by-block description, see [Architecture](docs/architecture.md).
 | [`images/`](images/) | Architecture, schematic, waveform, and layout figures |
 
 
-## Project resources
-
-- [Schematic review slides](https://docs.google.com/presentation/d/12N3y_zp929nU2PM8qJo1MPgFX7kk_WgMO9ezXvOn-c4/edit)
-- [Brief proposal](https://docs.google.com/presentation/d/11BPli64_wnRB7CIzmEGm5DrDxrM5vVj7b5d7VGgPUlY/edit)
-- [Detailed proposal](https://docs.google.com/presentation/d/1jtBmbHwJeaLtg7Y3EHuqR_N1Z0W8oqqH/edit)
-- [Related team repository](https://github.com/guptasou03/B11_CuriousIC_BMS)
 
 
