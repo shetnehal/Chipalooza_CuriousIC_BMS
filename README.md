@@ -1,10 +1,6 @@
 # CuriousIC | Battery Management System Analog Front-End
 
-**SSCS Chipathon 2026 · Track B · Team B11**
-
 CuriousIC is developing an analog front-end (AFE) for monitoring lithium-ion battery cells using voltage measurements and electrochemical impedance spectroscopy (EIS). The design targets measurements relevant to estimating state of charge (SoC) and state of health (SoH) for battery management applications.
-
-> **Project status:** The parameters below are *design targets* from the team's [Chipathon project submission](https://github.com/sscs-ose/sscs-chipathon-2026/issues/64), not verified silicon measurements. Schematic, simulation, and layout artifacts should be added as they are reviewed and approved.
 
 ## Project overview
 
