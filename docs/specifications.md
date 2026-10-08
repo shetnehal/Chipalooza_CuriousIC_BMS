@@ -14,10 +14,3 @@ The following values are **targets reported in the official project submission**
 | EIS | 3 Hz–2 kHz | Frequency-response sweep and accuracy |
 | Total power | < 5 mW | Block-level and full-chain power summation |
 
-The official issue also reports a **22-pin estimate** and **600 µm × 600 µm estimated area**, which are planning figures and are not treated as verified final specifications.
-
-## Verification policy
-
-Whenever a target is reported as achieved, provide a named report or simulation, process corner, supply, temperature, measurement setup, and date. Where results are unavailable, mark the target *not yet verified*.
-
-[Source issue](https://github.com/sscs-ose/sscs-chipathon-2026/issues/64)
