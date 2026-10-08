@@ -10,8 +10,3 @@ CuriousIC aims to design an integrated analog front-end for two series-connected
 
 The submitted architecture includes a capacitively coupled instrumentation amplifier (CCIA) and a third-order CIFF ADC. Further detailed circuit design must be reconciled with the approved schematic review.
 
-## Scope and status
-
-This repository records the design objectives, architecture, and progressively verified block-level evidence. The numerical specifications are proposed targets. The repository does not currently contain independently verified test reports proving those targets.
-
-**Source:** [SSCS Chipathon Team B11 submission](https://github.com/sscs-ose/sscs-chipathon-2026/issues/64).
