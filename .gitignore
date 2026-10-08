@@ -1,0 +1,10 @@
+# Local tool-generated files
+*.log
+*.raw
+*.psf
+*.psfxl
+*.bak
+*.swp
+.DS_Store
+__pycache__/
+# Review generated artifacts before sharing. Do not commit licensed PDK files or credentials.

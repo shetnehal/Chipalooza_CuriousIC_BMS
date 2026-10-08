@@ -1,70 +1,83 @@
-# [CuriousIC] Battery Management System
+# CuriousIC | Battery Management System Analog Front-End
 
-Team: CuriousIC  
-Project: Battery Management System
+**SSCS Chipathon 2026 · Track B · Team B11**
 
-### Team Members
+CuriousIC is developing an analog front-end (AFE) for monitoring lithium-ion battery cells using voltage measurements and electrochemical impedance spectroscopy (EIS). The design targets measurements relevant to estimating state of charge (SoC) and state of health (SoH) for battery management applications.
 
-| Name | Affiliation (experience) | Role |
-|---|---|---|
-| darshanshet2004 | Industry (Undergrad 2026) | Team Lead |
-| Nehal Shet | KLE Tech (Undergrad, pre-final) | Layout Lead & Designer |
-| syd_arif11 | Industry (Undergrad 2025) | Designer |
-| pavan_kr2004 | RNSIT (Undergrad, final) | Designer |
-| raghoothama_rao_k_s | RNSIT (Undergrad, final) | Designer |
-| saakshaat_ | Dayanand Sagar (Undergrad, freshman) | Designer |
-| soumyagupta_57286 | Industry (PhD 2026) | Mentor |
+> **Project status:** The parameters below are *design targets* from the team's [Chipathon project submission](https://github.com/sscs-ose/sscs-chipathon-2026/issues/64), not verified silicon measurements. Schematic, simulation, and layout artifacts should be added as they are reviewed and approved.
 
----
+## Project overview
 
-## Project Overview
+Lithium-ion battery packs used in electric vehicles, portable electronics, and energy-storage systems require reliable monitoring. Terminal voltage alone does not fully characterize battery health; frequency-dependent impedance measurements provide additional information about cell behaviour. This project explores an integrated AFE combining precision voltage sensing with EIS-based measurement capability.
 
-Battery management systems (BMS) are essential for monitoring the cell voltage and impedance of Li-ion batteries to ensure safety and reliability. These Li-ion batteries are widely used in EVs, portable devices and energy storage systems. This projects aims at designing an AFE for BMS that accurately measures batteries' state-of-charge and state-of-health through open circuit voltage and electrochemical impedance spectroscopy measurements.
+The proposed design targets **two series-connected Li-ion cells**, with **one active measurement channel** and an architecture intended to support future multiplexer expansion.
 
-## Top-Level Architecture
+## Architecture
 
-<!--
-Issue #64 contains an embedded GitHub-hosted architecture image here.
-Place the recovered original image at:
-images/top_level_architecture.png
+The reported analog signal chain includes a **capacitively coupled instrumentation amplifier (CCIA)** and a **third-order cascade-of-integrators feed-forward (CIFF) ADC**. The full connectivity and supporting control blocks should be documented against the approved top-level schematic.
 
-Then uncomment:
-![Top-Level Architecture](images/top_level_architecture.png)
--->
+![Top-level architecture — see reference issue](https://github.com/user-attachments/assets/05e9b1ee-34ec-4e06-846d-a389deea365b)
 
-## System Specifications
+For a block-by-block description, see [Architecture](docs/architecture.md).
 
-| Parameter | Spec |
+## Target specifications
+
+| Parameter | Design target |
 |---|---|
-| Target Process | GF180MCUD |
-| Battery Cells | 2 series connected Li-ion |
-| Channels | 1 active MUX ready for N-channel extension |
-| Supply | 5V |
-| Amplifier Architecture | CCIA |
-| ADC Architecture | 3rd order CIFF |
-| TME | <2mV |
-| EIS | 3Hz to 2kHz |
-| Total Power | <5mW |
+| CMOS process | GF180MCUD |
+| Battery configuration | Two series-connected Li-ion cells |
+| Active channels | One; multiplexer architecture intended for extension |
+| Supply voltage | 5 V |
+| Instrumentation amplifier | CCIA |
+| ADC | Third-order CIFF |
+| Total measurement error (TME) | < 2 mV |
+| EIS frequency range | 3 Hz–2 kHz |
+| Total power consumption | < 5 mW |
 
----
+These specifications are sourced from [the team submission](https://github.com/sscs-ose/sscs-chipathon-2026/issues/64). Definitions, measurement conditions, and design verification should be added alongside simulation results.
 
-## Proposal
+## Repository guide
 
-Brief Proposal presented in Weekly Meeting:  
-https://docs.google.com/presentation/d/11BPli64_wnRB7CIzmEGm5DrDxrM5vVj7b5d7VGgPUlY/edit?slide=id.g3ed019961ba_0_2#slide=id.g3ed019961ba_0_2
+| Location | Contents |
+|---|---|
+| [`docs/`](docs/) | Background, specifications, architecture, technical references |
+| [`design/schematics/`](design/schematics/) | Reviewed schematics and editable design sources when shareable |
+| [`design/simulations/`](design/simulations/) | Testbenches, simulation configurations, and scripts |
+| [`design/layout/`](design/layout/) | Layout views and physical-design material when shareable |
+| [`reports/`](reports/) | Schematic review, simulation, and layout review outputs |
+| [`presentations/`](presentations/) | Project presentations and review links |
+| [`images/`](images/) | Architecture, schematic, waveform, and layout figures |
 
-Detailed proposal:  
-https://docs.google.com/presentation/d/1jtBmbHwJeaLtg7Y3EHuqR_N1Z0W8oqqH/edit?slide=id.p4#slide=id.p4
+## Design and verification workflow
 
-Github Repo (managed by Soumya Gupta):  
-https://github.com/guptasou03/B11_CuriousIC_BMS.git
+1. **Architecture and specification:** Document the measurement objectives, signal chain, interfaces, and success criteria.
+2. **Schematic design:** Develop the constituent analog blocks and review block-level connections.
+3. **Simulation:** Assess relevant gain, noise, linearity, stability, conversion performance, and power consumption as appropriate to each block.
+4. **Physical design:** Prepare layouts, run design-rule and layout-versus-schematic checks, and document post-layout verification when available.
+5. **Integration and reviews:** Trace system-level targets to reported verification evidence.
 
----
+*This is an intended workflow, not a statement that every phase is complete.*
 
-## Schematic Review
+## Project resources
 
-Schematic Review Slides:  
-https://docs.google.com/presentation/d/12N3y_zp929nU2PM8qJo1MPgFX7kk_WgMO9ezXvOn-c4/edit?usp=sharing
+- [Official Chipathon project issue](https://github.com/sscs-ose/sscs-chipathon-2026/issues/64)
+- [Schematic review slides](https://docs.google.com/presentation/d/12N3y_zp929nU2PM8qJo1MPgFX7kk_WgMO9ezXvOn-c4/edit)
+- [Brief proposal](https://docs.google.com/presentation/d/11BPli64_wnRB7CIzmEGm5DrDxrM5vVj7b5d7VGgPUlY/edit)
+- [Detailed proposal](https://docs.google.com/presentation/d/1jtBmbHwJeaLtg7Y3EHuqR_N1Z0W8oqqH/edit)
+- [Layout review slides](https://docs.google.com/presentation/d/1rJZ-etx7EaYqIQTFyeex2EWuECI70009pZZuVRBge1s/edit)
+- [Project tracker](https://docs.google.com/spreadsheets/d/108bCtFWKPcUP86Tt6SOrhKjrjKEHrWavXDS_NzvJEGo/edit)
+- [Related team repository](https://github.com/guptasou03/B11_CuriousIC_BMS)
 
-Video Presentation:  
-https://drive.google.com/drive/folders/1Pk2BTmLKt_oFSOKxcdAW_aFOxzCpOccf?usp=sharing
+## Team
+
+| Member (GitHub/Discord identifier where available) | Role |
+|---|---|
+| darshanshet2004 | Team Lead |
+| Nehal Shet | Layout Lead & Designer |
+| syd_arif11 | Designer |
+| pavan_kr2004 | Designer |
+| raghoothama_rao_k_s | Designer |
+| saakshaat_ | Designer |
+| soumyagupta_57286 | Mentor |
+
+Team information is reproduced from the [official project entry](https://github.com/sscs-ose/sscs-chipathon-2026/issues/64). See [`docs/references.md`](docs/references.md) for supplementary documents.

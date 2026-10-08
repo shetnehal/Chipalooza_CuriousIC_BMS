@@ -1,9 +1,5 @@
 # Images
 
-Issue #64 contains an embedded GitHub-hosted image under **Top-Level Architecture**.
+Recommended filenames: `top_level_architecture.png`, `chip_top_symbol.png`, `ccia_schematic.png`, `adc_schematic.png`, `eis_response.png`, `top_layout.png`.
 
-The original binary image is not stored as a normal file in the public source repository page exposed here, so it has intentionally not been replaced with a different diagram.
-
-When the original asset is recovered, save it as:
-
-`top_level_architecture.png`
+The published architecture image is linked from the root README and architecture document. Add reviewed originals here with captions, source attribution and units.
