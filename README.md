@@ -1,6 +1,16 @@
 # CuriousIC | Battery Management System Analog Front-End
 
-CuriousIC is developing an analog front-end (AFE) for monitoring lithium-ion battery cells using voltage measurements and electrochemical impedance spectroscopy (EIS). The design targets measurements relevant to estimating state of charge (SoC) and state of health (SoH) for battery management applications.
+## Team
+
+| Member (GitHub/Discord identifier where available) | Role |
+|---|---|
+| darshanshet2004 | Team Lead |
+| Nehal Shet | Layout Lead & Designer |
+| syd_arif11 | Designer |
+| pavan_kr2004 | Designer |
+| raghoothama_rao_k_s | Designer |
+| saakshaat_ | Designer |
+| soumyagupta_57286 | Mentor |
 
 ## Project overview
 
@@ -64,16 +74,4 @@ These specifications are sourced from [the team submission](https://github.com/s
 - [Project tracker](https://docs.google.com/spreadsheets/d/108bCtFWKPcUP86Tt6SOrhKjrjKEHrWavXDS_NzvJEGo/edit)
 - [Related team repository](https://github.com/guptasou03/B11_CuriousIC_BMS)
 
-## Team
 
-| Member (GitHub/Discord identifier where available) | Role |
-|---|---|
-| darshanshet2004 | Team Lead |
-| Nehal Shet | Layout Lead & Designer |
-| syd_arif11 | Designer |
-| pavan_kr2004 | Designer |
-| raghoothama_rao_k_s | Designer |
-| saakshaat_ | Designer |
-| soumyagupta_57286 | Mentor |
-
-Team information is reproduced from the [official project entry](https://github.com/sscs-ose/sscs-chipathon-2026/issues/64). See [`docs/references.md`](docs/references.md) for supplementary documents.
