@@ -16,9 +16,3 @@ The official submission provides an architecture figure and identifies key block
 
 **EIS measurements:** The stated frequency range is 3 Hz to 2 kHz. The exact excitation generation, synchronous detection, and computation arrangement remain to be documented from the schematics and review slides.
 
-## To add after schematic review
-
-- Approved labelled block diagram (local image rather than external link)
-- Circuit-specific signal flow and input/output descriptions
-- Detailed stimulus and readout paths for OCV and EIS
-- Block-level simulation reports and links to corresponding schematics
