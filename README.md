@@ -42,7 +42,7 @@ For a block-by-block description, see [Architecture](docs/architecture.md).
 | Location | Contents |
 |---|---|
 | [`docs/`](docs/) | Background, specifications, architecture, technical references |
-| [`design/schematics/`](design/schematics/) | Reviewed schematics and editable design sources when shareable |
+| [`design/schematics/`](design/schematics/) | Reviewed schematics |
 | [`design/simulations/`](design/simulations/) | Testbenches, simulation configurations, and scripts |
 | [`design/layout/`](design/layout/) | Layout views and physical-design material when shareable |
 | [`reports/`](reports/) | Schematic review, simulation, and layout review outputs |
