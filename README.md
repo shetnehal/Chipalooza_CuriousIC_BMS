@@ -2,11 +2,12 @@
 
 ## Team
 
-| Member (Discord| Role |
+| Member | Role |
 |---|---|
-| darshanshet2004 | Team Lead |
+| Darshan Shet | Team Lead |
 | Nehal Shet | Layout Lead & Designer |
-| pavan_kr2004 | Designer |
+| Pavan K R| Designer |
+| Manju VK | Mentor |
 
 ## Project overview
 
