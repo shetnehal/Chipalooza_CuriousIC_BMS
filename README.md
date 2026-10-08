@@ -2,7 +2,7 @@
 
 ## Team
 
-| Member (Discord|
+| Member (Discord| Role |
 |---|---|
 | darshanshet2004 | Team Lead |
 | Nehal Shet | Layout Lead & Designer |
