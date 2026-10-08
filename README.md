@@ -6,10 +6,7 @@
 |---|---|
 | darshanshet2004 | Team Lead |
 | Nehal Shet | Layout Lead & Designer |
-| syd_arif11 | Designer |
 | pavan_kr2004 | Designer |
-| raghoothama_rao_k_s | Designer |
-| saakshaat_ | Designer |
 | soumyagupta_57286 | Mentor |
 
 ## Project overview
