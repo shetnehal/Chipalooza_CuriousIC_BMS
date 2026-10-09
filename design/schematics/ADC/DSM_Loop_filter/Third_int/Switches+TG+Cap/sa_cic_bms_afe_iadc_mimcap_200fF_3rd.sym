@@ -1,0 +1,27 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+spectre_format="@name ( @pinlist ) @symname"
+template="name=x1"
+}
+V {}
+S {}
+F {}
+E {}
+L 4 0 -15 0 15 {}
+L 4 -60 0 -10 0 {}
+L 4 -60 -40 50 -40 {}
+L 4 0 0 50 0 {}
+L 4 50 -40 50 40 {}
+L 4 -60 40 50 40 {}
+L 4 -60 -40 -60 40 {}
+L 4 -10 -15 -10 15 {}
+B 5 47.5 -2.5 52.5 2.5 {name=Cneg dir=inout}
+B 5 -62.5 -2.5 -57.5 2.5 {name=Cpos dir=inout}
+T {MIMCAP_0.2pF} 41 -36 0 1 0.25 0.25 {layer=6}
+T {3rd
+} 28 14 0 0 0.2 0.2 {layer=21}
+T {Cneg} 45 -14 0 1 0.2 0.2 {}
+T {Cpos} -55 -14 0 0 0.2 0.2 {}
+T {0.2pF} 19 16 0 1 0.3 0.3 {layer=7}
