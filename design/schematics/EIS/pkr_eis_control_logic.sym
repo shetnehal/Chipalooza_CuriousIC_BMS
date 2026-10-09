@@ -1,0 +1,32 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+F {}
+E {}
+L 4 130 -30 150 -30 {}
+L 4 -150 -30 -130 -30 {}
+L 4 130 10 150 10 {}
+L 4 -150 -10 -130 -10 {}
+L 7 0 -60 0 -40 {}
+L 7 0 40 0 60 {}
+B 5 147.5 -32.5 152.5 -27.5 {name=D_IN_BAR dir=out}
+B 5 -2.5 -62.5 2.5 -57.5 {name=DVDD dir=inout}
+B 5 -152.5 -32.5 -147.5 -27.5 {name=DATA_IN dir=in}
+B 5 147.5 7.5 152.5 12.5 {name=D_IN dir=out}
+B 5 -2.5 57.5 2.5 62.5 {name=AVSS dir=inout}
+B 5 -152.5 -12.5 -147.5 -7.5 {name=PI1 dir=in}
+P 4 5 130 -40 -130 -40 -130 40 130 40 130 -40 {}
+T {Ccontrol logic
+} -52.5 -6 0 0 0.3 0.3 {}
+T {@name} 135 -52 0 0 0.2 0.2 {}
+T {D_IN_BAR} 125 -34 0 1 0.2 0.2 {}
+T {DVDD} 15 -34 0 1 0.2 0.2 {}
+T {DATA_IN} -125 -34 0 0 0.2 0.2 {}
+T {D_IN} 125 6 0 1 0.2 0.2 {}
+T {AVSS} 5 26 0 1 0.2 0.2 {}
+T {PI1} -125 -14 0 0 0.2 0.2 {}

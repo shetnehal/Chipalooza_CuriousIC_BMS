@@ -1,0 +1,29 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+spectre_format="@name ( @pinlist ) @symname"
+template="name=x1"
+}
+V {}
+S {}
+F {}
+E {}
+L 4 0 -120 0 -100 {}
+L 4 -20 -100 20 -100 {}
+L 4 -20 -90 20 -90 {}
+L 4 0 -90 -0 -70 {}
+L 4 -40 -130 -40 -50 {}
+L 4 -40 -50 50 -50 {}
+L 4 50 -140 50 -50 {}
+L 4 -40 -140 50 -140 {}
+L 4 -40 -140 -40 -130 {}
+L 4 0 -140 0 -120 {}
+L 4 0 -70 0 -50 {}
+B 5 -2.5 -142.5 2.5 -137.5 {name=plus dir=in}
+B 5 -2.5 -52.5 2.5 -47.5 {name=minus dir=in}
+T {CAP
+1PF} -29 -136 0 0 0.2 0.2 {}
+T {@name} 5 -142 0 0 0.2 0.2 {}
+T {plus} 5 -124 0 0 0.2 0.2 {}
+T {minus} 5 -84 0 0 0.2 0.2 {}

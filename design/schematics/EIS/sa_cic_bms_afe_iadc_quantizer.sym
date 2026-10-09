@@ -1,0 +1,42 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+spectre_format="@name ( @pinlist ) @symname"
+template="name=x1"
+}
+V {}
+S {}
+F {}
+E {}
+L 4 240 -60 240 60 {}
+L 4 270 -20 270 20 {}
+L 4 270 20 290 20 {}
+L 4 200 -20 240 -20 {}
+L 4 200 0 240 0 {}
+L 4 250 -20 270 -20 {}
+L 4 240 60 340 0 {}
+L 4 240 -60 340 0 {}
+L 4 200 20 240 20 {}
+L 4 290 -30 340 -30 {}
+L 4 290 30 340 30 {}
+L 4 280 36 280 70 {}
+L 4 280 -70 280 -36 {}
+L 15 250 0 290 0 {dash=7}
+B 5 277.5 -72.5 282.5 -67.5 {name=AVDD dir=in}
+B 5 337.5 -32.5 342.5 -27.5 {name=Dout dir=out}
+B 5 337.5 27.5 342.5 32.5 {name=Dout_b dir=out}
+B 5 197.5 -22.5 202.5 -17.5 {name=Vinp dir=in}
+B 5 197.5 -2.5 202.5 2.5 {name=CLK dir=in}
+B 5 277.5 67.5 282.5 72.5 {name=AVSS dir=in}
+B 5 197.5 17.5 202.5 22.5 {name=Vinn dir=in}
+T {AVDD} 294 -35 1 1 0.2 0.2 {}
+T {Dout} 335 -44 0 1 0.2 0.2 {}
+T {Dout_b} 335 44 2 0 0.2 0.2 {}
+T {Vinp} 205 -34 0 0 0.2 0.2 {}
+T {CLK} 205 -14 0 0 0.2 0.2 {}
+T {AVSS} 294 65 1 1 0.2 0.2 {}
+T {     1-BIT
+QUANTIZER} 270.5 -15 0 0 0.25 0.25 {layer=6}
+T {@name} 308 50 0 0 0.2 0.2 {layer=21}
+T {Vinn} 205 6 0 0 0.2 0.2 {}
