@@ -37,17 +37,26 @@ For a block-by-block description, see [Architecture](docs/architecture.md).
 | EIS frequency range | 3 Hz–2 kHz |
 | Total power consumption | < 5 mW |
 
-## Repository guide
 
-| Location | Contents |
+## Repository Guide
+
+| Directory | Description |
 |---|---|
-| [`docs/`](docs/) | Background, specifications, architecture, technical references |
-| [`design/schematics/`](design/schematics/) | Reviewed schematics |
-| [`design/simulations/`](design/simulations/) | Testbenches, simulation configurations, and scripts |
-| [`design/layout/`](design/layout/) | Layout views and physical-design material when shareable |
-| [`reports/`](reports/) | Schematic review, simulation, and layout review outputs |
-| [`presentations/`](presentations/) | Project presentations and review links |
-| [`images/`](images/) | Architecture, schematic, waveform, and layout figures |
+| [`docs/`](docs/) | Project overview, architecture, specifications, and supporting documentation. |
+| [`design/schematics/`](design/schematics/) | Circuit schematics and symbols for the analog front-end and its submodules. |
+| [`BMS_Top/`](design/schematics/BMS_Top/) | Top-level Battery Management System schematic and integration. |
+| [`CCIA/`](design/schematics/CCIA/) | Capacitively Coupled Instrumentation Amplifier, including its supporting circuits. |
+| [`ADC/`](design/schematics/ADC/) | ADC circuitry, including integrators, quantizer, adder, and clock-generation blocks. |
+| [`ADC_Buffer/`](design/schematics/ADC_Buffer/) | Analog buffer circuitry associated with the ADC. |
+| [`EIS/`](design/schematics/EIS/) | Electrochemical Impedance Spectroscopy circuit schematics and supporting blocks. |
+| [`MUX/`](design/schematics/MUX/) | Multiplexer circuitry for channel selection. |
+| [`NOCG/`](design/schematics/NOCG/) | Non-overlapping clock-generation circuitry. |
+| [`Current_gen/`](design/schematics/Current_gen/) | Current-generation circuit schematics. |
+| [`design/layout/`](design/layout/) | Physical layout design and related documentation. |
+| [`proposal/`](proposal/) | Project proposal materials and references. |
+
+
+
 
 
 
